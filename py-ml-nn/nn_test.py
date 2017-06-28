@@ -72,5 +72,5 @@ if __name__ == "__main__":
     print "New weights after training: "
     print neural_net.synaptic_weights
 
-    print "Considering new situation [400, 1, 3, 2] -> ?: "
-    print neural_net.think(array([0, 0, 0, 0]))
+    print "Considering new situation [0,0,0,1] -> ?: "
+    print neural_net.think(array([40, 11, 4, 2]))
