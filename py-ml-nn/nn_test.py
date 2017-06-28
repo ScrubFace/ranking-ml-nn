@@ -63,8 +63,8 @@ if __name__ == "__main__":
     # Second value is # of gears
     # Third value is # of rotors: max = 4
     # Fourth value is feasibility rating from 1 to 3
-    data = array([[36, 12, 4, 3], [0, 15, 4, 3], [5, 3, 1, 1], [300, 5, 2, 2], [200, 5, 4, 2]])
-    ranking = array([[1, 2, 5, 4, 3]]).T
+    data = array([[36, 12, 4, 3], [0, 15, 4, 3], [5, 3, 1, 1], [300, 5, 2, 2]])
+    ranking = array([[1, 2, 4, 3]]).T
 
     # Train the neural net 10000 times
     neural_net.train(data, ranking, 10000)
@@ -73,4 +73,4 @@ if __name__ == "__main__":
     print neural_net.synaptic_weights
 
     print "Considering new situation [0,0,0,1] -> ?: "
-    print neural_net.think(array([40, 11, 4, 2]))
+    print neural_net.think(array([40, 11, 4, 1]))
